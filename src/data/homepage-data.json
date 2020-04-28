@@ -1,0 +1,31 @@
+[
+  {
+    "key": "Meta",
+    "label": "Home"
+  },
+  {
+    "key": "Hero Section",
+    "heroHeader": "I create tailored experiences for brands.",
+    "heroContent": "For more than two years I’ve been working with brands, helping them to develop their notoriety both in terms of identity and online presence.",
+    "heroLinkText": "Check my work"
+  },
+  {
+    "key": "Project Section",
+    "projectsHeader": "Projects",
+    "projectsLinkText": "See all the projects"
+  },
+  {
+    "key": "Services Section",
+    "servicesHeader": "Services",
+    "servicestLinkText": "See more about services"
+  },
+  {
+    "key": "About Section",
+    "aboutHeader": "About Me",
+    "aboutLinkText": "Get in touch"
+  },
+  {
+    "key": "Testimonials Section",
+    "testimonialsHeader": "Testimonials"
+  }
+]
