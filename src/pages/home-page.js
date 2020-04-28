@@ -1,35 +1,51 @@
 import React from 'react';
 import Data from '../data/homepage-data.json';
 
+const heroData = Data.Hero;
+const projectsData = Data.Projects;
+const servicesData = Data.Services;
+const aboutData = Data.About;
+const testimonialsData = Data.Testimonials;
+
 const HomePage = () => {
   return (
     <div className="page-wrapper">
-    {Data.map((data) => {
-      return (
-        <>
-        <section id="hero" key={data.key} >
-          <h1>{data.heroHeader}</h1>
-          <p>{data.heroContent}</p>
-          <a href="#">{data.heroLinkText}</a>
+      {heroData.map(hero => (
+        <section id="hero" key="heri">
+          <h1>{hero.header}</h1>
+          <p>{hero.content}</p>
+          <a href="#">{hero.linkText}</a>
         </section>
-        <section id="projects" key={data.key} >
-          <h1>{data.projectsHeader}</h1>
-          <a href="#">{data.projectsLinkText}</a>
+      ))}
+      {projectsData.map(projects => (
+        <section id="projects" key="projects">
+          <h1>{projects.header}</h1>
+          <a href="#">{projects.linkText}</a>
         </section>
-        <section id="services" key={data.key} >
-          <h1>{data.servicesHeader}</h1>
-          <a href="#">{data.servicestLinkText}</a>
+      ))}
+      {servicesData.map(services => (
+        <section id="services" key="services">
+        <h1>{services.header}</h1>
+          {services.listedServices.map(listedService => (
+            <div key={listedService.id}>
+              <h3>{listedService.serviceTitle}</h3>
+              <p>{listedService.serviceDesc}</p>
+              <hr/>
+            </div>
+          ))}
         </section>
-        <section id="about" key={data.key} >
-          <h1>{data.aboutHeader}</h1>
-          <a href="#">{data.aboutLinkText}</a>
+      ))}
+      {aboutData.map(about => (
+        <section id="about" key="about">
+          <h1>{about.header}</h1>
+          <a href="#">{about.linkText}</a>
         </section>
-        <section id="about" key={data.key} >
-          <h1>{data.testimonialsHeader}</h1>
+      ))}
+      {testimonialsData.map(testimonials => (
+        <section id="testimonials" key="testimonials">
+          <h1>{testimonials.header}</h1>
         </section>
-        </>
-      )
-    })}
+      ))}
     </div>
   );
 }

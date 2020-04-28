@@ -1,31 +1,54 @@
-[
-  {
-    "key": "Meta",
-    "label": "Home"
-  },
-  {
-    "key": "Hero Section",
-    "heroHeader": "I create tailored experiences for brands.",
-    "heroContent": "For more than two years I’ve been working with brands, helping them to develop their notoriety both in terms of identity and online presence.",
-    "heroLinkText": "Check my work"
-  },
-  {
-    "key": "Project Section",
-    "projectsHeader": "Projects",
-    "projectsLinkText": "See all the projects"
-  },
-  {
-    "key": "Services Section",
-    "servicesHeader": "Services",
-    "servicestLinkText": "See more about services"
-  },
-  {
-    "key": "About Section",
-    "aboutHeader": "About Me",
-    "aboutLinkText": "Get in touch"
-  },
-  {
-    "key": "Testimonials Section",
-    "testimonialsHeader": "Testimonials"
-  }
-]
+{
+  "Meta": [
+    {
+      "label": "Home"
+    }
+  ],
+  "Hero": [
+    {
+      "header": "I create tailored experiences for brands.",
+      "content": "For more than two years I’ve been working with brands, helping them to develop their notoriety both in terms of identity and online presence.",
+      "linkText": "Check my work"
+    }
+  ],
+  "Projects": [
+    {
+      "header": "Projects",
+      "linkText": "See all the projects"
+    }
+  ],
+  "Services": [
+    {
+      "header": "Services",
+      "listedServices": [
+        {
+          "id": 1,
+          "serviceTitle": "Strategy",
+          "serviceDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus officiis animi voluptatibus beatae quia repudiandae officia, nemo expedita deleniti nostrum?"
+        },
+        {
+          "id": 2,
+          "serviceTitle": "Design",
+          "serviceDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus officiis animi voluptatibus beatae quia repudiandae officia, nemo expedita deleniti nostrum?"
+        },
+        {
+          "id": 3,
+          "serviceTitle": "Development",
+          "serviceDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus officiis animi voluptatibus beatae quia repudiandae officia, nemo expedita deleniti nostrum?"
+        }
+      ],
+      "linkText": "See more about services"
+    }
+  ],
+  "About": [
+    {
+      "header": "About",
+      "linkText": "Get in touch"
+    }
+  ],
+  "Testimonials": [
+    {
+      "header": "Testimonials"
+    }
+  ]
+}
